@@ -5,6 +5,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   font-size: 62.5%;
 }
