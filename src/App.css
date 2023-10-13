@@ -178,12 +178,13 @@ footer {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  border: 1px solid black;
+  row-gap: 2rem;
 }
 
 .project-box {
   width: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 .project-img {
@@ -193,22 +194,19 @@ footer {
 }
 
 .gradient {
+  display: none;
+}
+
+.gradient.active {
+  display: block;
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 0%;
   left: 0;
-  background: linear-gradient(
-    to bottom right,
-    rgba(255, 255, 255, 0.555),
-    rgba(0, 0, 0, 0.747)
-  );
-  backdrop-filter: blur(5px);
-  opacity: 0;
-}
-
-.gradient:hover {
-  opacity: 100;
+  backdrop-filter: blur(3px);
+  transition: all 0s ease-in-out;
+  background: none;
 }
 
 .gradient a {
@@ -252,5 +250,11 @@ footer {
   }
   .theme {
     right: 30%;
+  }
+  .projects-showcase {
+    margin: 0 auto;
+    width: 79rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
   }
 }

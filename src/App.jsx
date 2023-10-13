@@ -1,9 +1,11 @@
 import "./App.css";
 import { useState } from "react";
+import data from "./data.js";
 
 function App() {
   const [theme, setTheme] = useState("day");
   const [showcase, setShowcase] = useState("projects");
+  const [curProject, setCurProject] = useState(null);
   return (
     <>
       <div className="container">
@@ -425,24 +427,29 @@ function App() {
           )}
           {showcase === "projects" && (
             <div className="projects-showcase">
-              <div className="project-box">
-                <div className="gradient">
-                  <a
-                    className="project"
-                    href="https://card-flip-ruddy.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+              {data.map((el, idx) => (
+                <div
+                  className="project-box"
+                  key={idx}
+                  onMouseOver={() => setCurProject(idx)}
+                  onMouseOut={() => setCurProject(null)}
+                >
+                  <div
+                    className={`gradient ${curProject === idx ? "active" : ""}`}
                   >
-                    Card-Flip Game
-                  </a>
-                </div>
+                    <a
+                      className="project"
+                      href={el.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {el.name}
+                    </a>
+                  </div>
 
-                <img
-                  className="project-img"
-                  src="/project/cardflip.png"
-                  alt="card flip game"
-                />
-              </div>
+                  <img className="project-img" src={el.src} alt={el.name} />
+                </div>
+              ))}
             </div>
           )}
         </div>
