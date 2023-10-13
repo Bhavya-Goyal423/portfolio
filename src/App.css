@@ -216,12 +216,26 @@ footer {
   align-items: flex-end;
   width: 100%;
   height: 100%;
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   text-decoration: none;
   color: rgb(8, 8, 8);
   cursor: pointer;
   padding: 0.8rem 1.2rem;
   font-weight: 500;
+}
+
+.gradient a span {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.gradient a svg {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: rgb(8, 8, 8);
+  position: relative;
 }
 
 /* !More than 400 px  */
@@ -258,5 +272,8 @@ footer {
     width: 79rem;
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
+  }
+  .gradient a {
+    font-size: 1.4rem;
   }
 }
