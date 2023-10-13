@@ -1,0 +1,172 @@
+.container {
+  margin-top: 4.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2.4rem;
+}
+
+.theme {
+  position: absolute;
+  top: 2%;
+  right: 12%;
+}
+
+.theme-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.details {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-details img {
+  width: 13rem;
+  border-radius: 50%;
+  padding: 0.6rem;
+  border: 2px solid #42a5f5;
+}
+
+.name {
+  margin-top: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.contact-social {
+  margin: 2.4rem 0;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.cv {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.resume-btn {
+  padding: 1.2rem 1.6rem;
+  border-radius: 11px;
+  color: #fff;
+  background-color: #42a5f5;
+  font-size: 1.4rem;
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.download-icon {
+  width: 2rem;
+  height: 2rem;
+  align-self: flex-end;
+}
+
+.whatsapp {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.social-icon {
+  cursor: pointer;
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.showcase {
+  margin-top: 3.6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.cta {
+  width: 100%;
+  background-color: #ced4da;
+  padding: 0.6rem;
+  display: flex;
+  border-radius: 11px;
+}
+
+.skills {
+  margin-left: auto;
+}
+
+.projects,
+.skills {
+  font-size: 1.4rem;
+  padding: 1.2rem 4rem;
+  border-radius: 11px;
+  transition: all 0.3s;
+}
+
+.active {
+  background-color: #fff;
+}
+.skills-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 3.6rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.skills-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.5rem;
+  row-gap: 1.2rem;
+  font-size: 1.6rem;
+}
+.level {
+  font-size: 1.1rem;
+  color: #868e96;
+}
+.skill p {
+  position: relative;
+}
+.skill span svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 10%;
+  left: -25%;
+  color: #42a5f5;
+}
+footer {
+  margin-top: 2.4rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+@media (width>50rem) {
+  .skills-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 3.6rem;
+  }
+}
