@@ -423,6 +423,28 @@ function App() {
               </div>
             </div>
           )}
+          {showcase === "projects" && (
+            <div className="projects-showcase">
+              <div className="project-box">
+                <div className="gradient">
+                  <a
+                    className="project"
+                    href="https://card-flip-ruddy.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Card-Flip Game
+                  </a>
+                </div>
+
+                <img
+                  className="project-img"
+                  src="/project/cardflip.png"
+                  alt="card flip game"
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <footer>Bhavya &copy; All Rights Reserved</footer>
