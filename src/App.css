@@ -166,6 +166,13 @@ footer {
   text-align: center;
 }
 
+@media (width>20em) {
+  .projects,
+  .skills {
+    padding: 1.2rem 17%;
+  }
+}
+
 @media (width>25em) {
   .projects,
   .skills {
