@@ -11,14 +11,9 @@ const data = [
   },
 
   {
-    href: "https://currency-converter-blush-nu.vercel.app/",
-    name: "Currency Converter",
-    src: "/project/currency.png",
-  },
-  {
-    href: "https://card-flip-ruddy.vercel.app/",
-    name: "Job Recruiter Node JS",
-    src: "/project/job.png",
+    href: "https://photofolio-two.vercel.app/",
+    name: "Online Photo Album",
+    src: "/project/album.png",
   },
 ];
 
