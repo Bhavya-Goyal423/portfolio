@@ -69,7 +69,11 @@ function App() {
               </svg>
             </a>
             {/* !------------Linked In----------------  */}
-            <a href="/">
+            <a
+              href="https://www.linkedin.com/in/bhavya-goyal-3979237b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -84,7 +88,11 @@ function App() {
               </svg>
             </a>
             {/* !------------Github----------------  */}
-            <a href="/">
+            <a
+              href="https://github.com/Bhavya-Goyal423"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
