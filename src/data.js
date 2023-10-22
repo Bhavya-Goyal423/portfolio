@@ -15,6 +15,11 @@ const data = [
     name: "Online Photo Album",
     src: "/project/album.png",
   },
+  {
+    href: "https://image-gallery-weld-one.vercel.app/",
+    name: "Image Search Gallery",
+    src: "/project/gallery.png",
+  },
 ];
 
 export default data;
